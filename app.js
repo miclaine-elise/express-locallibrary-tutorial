@@ -47,9 +47,6 @@ app.use("/catalog", catalogRouter); // Add catalog routes to middleware chain.
 // Set up mongoose connection
 const mongoose = require("mongoose");
 mongoose.set("strictQuery", false);
-// Set up mongoose connection
-const mongoose = require("mongoose");
-mongoose.set("strictQuery", false);
 
 const dev_db_url = "mongodb+srv://admin:beepboop@cluster0.aeeiznp.mongodb.net/local_library?retryWrites=true&w=majority&appName=Cluster0";
 const mongoDB = process.env.MONGODB_URI || dev_db_url;
